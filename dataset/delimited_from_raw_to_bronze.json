@@ -1,0 +1,33 @@
+{
+	"name": "delimited_from_raw_to_bronze",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_deltalake",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"P_filename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().P_filename",
+					"type": "Expression"
+				},
+				"folderPath": "onprem",
+				"fileSystem": "bronze"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
