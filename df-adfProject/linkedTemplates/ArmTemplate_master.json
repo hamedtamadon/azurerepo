@@ -15,6 +15,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'ls_deltalake'"
 		},
+		"spotify_delta_lake_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'spotify_delta_lake'"
+		},
+		"spotify_sql_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'spotify_sql'"
+		},
 		"linekdS_onPerm_properties_typeProperties_host": {
 			"type": "string",
 			"defaultValue": "\\\\192.168.0.246\\ADF_Project"
@@ -26,6 +34,22 @@
 		"ls_deltalake_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://storageadeltalake.dfs.core.windows.net/"
+		},
+		"spotify_delta_lake_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://saspotify.dfs.core.windows.net/"
+		},
+		"spotify_sql_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "spotifyazureprojectserverr.database.windows.net"
+		},
+		"spotify_sql_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "spotify_azure_project"
+		},
+		"spotify_sql_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "adminadmin"
 		},
 		"containerUri": {
 			"type": "string",
@@ -57,11 +81,29 @@
 					"ls_deltalake_accountKey": {
 						"value": "[parameters('ls_deltalake_accountKey')]"
 					},
+					"spotify_delta_lake_accountKey": {
+						"value": "[parameters('spotify_delta_lake_accountKey')]"
+					},
+					"spotify_sql_password": {
+						"value": "[parameters('spotify_sql_password')]"
+					},
 					"linekdS_onPerm_password": {
 						"value": "[parameters('linekdS_onPerm_password')]"
 					},
 					"ls_deltalake_properties_typeProperties_url": {
 						"value": "[parameters('ls_deltalake_properties_typeProperties_url')]"
+					},
+					"spotify_delta_lake_properties_typeProperties_url": {
+						"value": "[parameters('spotify_delta_lake_properties_typeProperties_url')]"
+					},
+					"spotify_sql_properties_typeProperties_server": {
+						"value": "[parameters('spotify_sql_properties_typeProperties_server')]"
+					},
+					"spotify_sql_properties_typeProperties_database": {
+						"value": "[parameters('spotify_sql_properties_typeProperties_database')]"
+					},
+					"spotify_sql_properties_typeProperties_userName": {
+						"value": "[parameters('spotify_sql_properties_typeProperties_userName')]"
 					},
 					"linekdS_onPerm_properties_typeProperties_host": {
 						"value": "[parameters('linekdS_onPerm_properties_typeProperties_host')]"

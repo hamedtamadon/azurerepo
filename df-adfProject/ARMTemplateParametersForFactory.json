@@ -11,6 +11,12 @@
 		"ls_deltalake_accountKey": {
 			"value": ""
 		},
+		"spotify_delta_lake_accountKey": {
+			"value": ""
+		},
+		"spotify_sql_password": {
+			"value": ""
+		},
 		"linekdS_onPerm_properties_typeProperties_host": {
 			"value": "\\\\192.168.0.246\\ADF_Project"
 		},
@@ -19,6 +25,18 @@
 		},
 		"ls_deltalake_properties_typeProperties_url": {
 			"value": "https://storageadeltalake.dfs.core.windows.net/"
+		},
+		"spotify_delta_lake_properties_typeProperties_url": {
+			"value": "https://saspotify.dfs.core.windows.net/"
+		},
+		"spotify_sql_properties_typeProperties_server": {
+			"value": "spotifyazureprojectserverr.database.windows.net"
+		},
+		"spotify_sql_properties_typeProperties_database": {
+			"value": "spotify_azure_project"
+		},
+		"spotify_sql_properties_typeProperties_userName": {
+			"value": "adminadmin"
 		}
 	}
 }
